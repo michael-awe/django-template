@@ -1,0 +1,34 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock title %}
+
+{% block form %}
+    <form action="{% url 'accounts:register' %}" method="post">
+        {% csrf_token %}
+
+        <h1>Register</h1>
+
+        {% if message %}
+            <p class="error">{{ message }}</p>
+        {% endif %}
+        
+        {% for field in form %}
+            <div class="form-group">
+                <p class="field-label">
+                    {{ field.label }}
+                </p>
+                {{ field }}
+            </div>
+        {% endfor %}
+
+        <input type="submit" value="Sign Up">
+
+        <p class="dont-have">
+            Already have an account? <a href="{% url 'accounts:login' %}">Login here.</a>
+        </p>
+
+    </form>
+
+   
+{% endblock %}
