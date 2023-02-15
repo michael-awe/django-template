@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-font: 'Inter', sans-serif;
+    --heading-color: #19a26d;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+h2{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+strong{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
