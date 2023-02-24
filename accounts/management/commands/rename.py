@@ -10,7 +10,6 @@ class Command(BaseCommand):
         parser.add_argument('new_project_name', type=str, help='The new project name')
     
     def handle(self, *args, **kwargs):
-        print("Renaming your Django project...")
 
         # Get the old and new project names from the command line arguments
         old_project_name = kwargs['old_project_name']
