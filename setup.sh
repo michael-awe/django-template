@@ -9,4 +9,7 @@ python manage.py rename 'djangotemplate' $project_name
 #Run server
 python manage.py runserver
 
+#Install tailwind dependencies
+python manage.py tailwind install
+
 echo "Project setup complete."
