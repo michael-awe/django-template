@@ -47,6 +47,7 @@ Now install the dependencies from requirements.txt
 After installing the requirements, run setup.sh. When prompted, enter a new project name:
 
     sh setup.sh
+    python manage.py tailwind install
     ...
     Enter a new project name: (ensure name is allowed by Django before pressing ENTER)
 
