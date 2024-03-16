@@ -5,28 +5,3 @@
     --heading-color: #092e20;
 }
 
-body{
-    font-family: var(--primary-font);
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 20px;
-}
-
-li{
-    margin: 5px 0px;
-}
-
-h1{
-    font-weight: 600;
-    font-size: 32px;
-    color: var(--heading-color);
-}
-
-h2{
-    font-weight: 600;
-    font-size: 28px;
-    color: var(--heading-color);
-}
-
