@@ -1,0 +1,14 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title%}Movie List{% endblock %}
+
+{% block content %}
+    <h1>Movie List</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>{{ movie.name }} ({{ movie.year }})</li>
+        {% endfor %}
+    </ul>
+    
+{% endblock content %}
