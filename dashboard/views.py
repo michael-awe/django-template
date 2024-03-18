@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required, user_passes_test
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
 
 from recommendations.models import Movie
 
@@ -35,15 +37,21 @@ def get_movie(request, movie_id):
 
 
 @user_passes_test(is_admin)
-def create_movie(request):
-    pass
+def create_movie(request, movie_id):
+    return render(request, "dashboard/404.html")
 
 
 @user_passes_test(is_admin)
-def delete_movie(request):
-    pass
+def delete_movie(request, movie_id):
+    try:
+        # movie = get_object_or_404(Movie, pk=movie_id)
+        movie = Movie.objects.get(pk=movie_id)
+        movie.delete()
+        return JsonResponse({"message": "Movie deleted successfully"})
+    except Movie.DoesNotExist:
+        return JsonResponse({"error": "Movie not found"}, status=404)
 
 
 @user_passes_test(is_admin)
-def update_movie(request):
-    pass
+def update_movie(request, movie_id):
+    return render(request, "dashboard/404.html")
