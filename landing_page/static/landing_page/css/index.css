@@ -1,31 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&display=swap");
 
 :root {
   --primary-font: "Inter", sans-serif;
-  --heading-color: #092e20;
+  --secondary-font: "Lexend Deca", sans-serif;
+  --black: #333;
+  --white: #fafafa;
+  --periwinkle: #d2ccfc;
 }
 
 body {
   font-family: var(--primary-font);
-  background-color: rgb(255, 255, 255);
+  background-color: var(--periwinkle);
+}
+
+.movies_div {
+  overflow-x: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+
+  padding: 1rem;
+  text-align: center;
+}
+
+.movie {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px 20px;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
-li {
-  margin: 5px 0px;
+.movie img {
+  width: auto;
+  height: 350px;
+  border-radius: 7px;
+  border: 1px solid var(--black);
 }
 
-h1 {
-  font-weight: 600;
-  font-size: 32px;
-  color: var(--heading-color);
+/* Displays over Movie Poster */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-h2 {
-  font-weight: 600;
-  font-size: 28px;
-  color: var(--heading-color);
+.tooltiptext {
+  display: none;
+  width: 200px;
+  height: auto;
+  background-color: #00000095;
+  color: #fff;
+  text-align: left;
+  margin: 1rem;
+  padding: 15px;
+  border-radius: 6px;
+  position: absolute;
+}
+
+.tooltiptext button {
+  font-family: var(--primary-font);
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background-color: #d6d6d6;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+  display: block;
+  transition: all 0.3s ease;
 }
