@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
     <link rel="stylesheet" href="{% static 'landing_page/css/about.css' %}" />
+    <script src="{% static 'landing_page/js/index.js' %}" defer></script>
     <title>ReeldIn</title>
   </head>
 
@@ -32,6 +33,7 @@
         id="searchbar"
         name="searchbar"
         placeholder="Search for movies..."
+        onkeydown="searchMovies(event)"
       />
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
