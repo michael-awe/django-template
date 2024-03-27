@@ -1,57 +1,40 @@
-# Django Template
+# ReeldIn
 
-Django Template is a simple Django app that comes equipped with a **landing page**, **authentication** functionality, and a **dashboard**. It also comes fully integrated with **django-auto-reload** for hot reload functionality during development and **django-tailwind** so you can start using TailwindCSS straight away.
+ISTA 498: Capstone Project [Group 8]
 
-It was designed to save developers time and frustration when creating new Django applications by providing a pre-built foundation with some of the most common features already in place.
+Mentor: Greg Chism
 
-## Features
+Professor: Michael McKisson
 
-This Django template is extremely barebones and comes with three pre-configured apps: **landing_page**, **accounts**, and **dashboard**.
+Uses <a href="https://github.com/michael-awe/django-template">django-template</a>.
+Find their license, changelog, and read-me in the files with the prefix 'django-template'.
 
-  1. **landing_page** - serves as the homepage for your application and can be customized further to fit your needs.
-  2. **accounts** - adds user registration, login and logout functionality to your application.
-  3. **dashboard** - the app where your users are directed after login/registration. Your app functionality can be added here.
+Watch the videos found in 'documentation/video_urls.txt' and read what's below. If there's
+conflicting information, follow what's written here instead.
 
-Additionally, the template comes with the following Python packages pre-installed:
+## VSCode Extensions
 
-  1. [**django-auto-reload**](https://github.com/adamchainz/django-browser-reload) - This provides your app with hot reload functionality to make development so much easier
-  2. [**django-tailwind**](https://django-tailwind.readthedocs.io/en/latest/installation.html) - This provides out of the box support for TailwindCSS
-  
-## Requirements
+- Black Formatter by Microsoft
+- Pylance by Microsoft
+- Prettier - Code formatter by Prettier
 
-To use this template you'll need to have the following installed:
+## Set-Up (Windows)
 
-  1. Python 3
-  2. Latest version of NodeJS (https://nodejs.org/en)
+Make a 'ReeldIn' folder that'll hold our project and clone the repo:
 
-## Setup
+    mkdir Implementation
+    cd Implementation
+    git clone https://github.com/jonathanhouge/ReeldIn.git .
 
-To begin using this template, start by creating a directory for your project:
-
-    mkdir <YOUR_PROJECT_NAME>
-    cd <YOUR_PROJECT_NAME>
-
-Clone the repository into the current directory:
-
-    git clone git@github.com:michael-awe/django-template.git .
-
-Next, create and activate a virtual environment
+Next, create and activate a virtual environment:
 
     python3 -m venv env
-    source env/bin/activate
+    source env/Scripts/activate
 
-Now install the dependencies from requirements.txt
+Now install the dependencies from requirements.txt and run the set up script:
 
     pip install -r requirements.txt
-
-After installing the requirements, run setup.sh. When prompted, enter a new project name:
-
     sh setup.sh
-    python manage.py tailwind install
-    ...
-    Enter a new project name: (ensure name is allowed by Django before pressing ENTER)
-
-**NOTE: Ensure that the project name you enter is unique to ensure no clashes with Django or other Python modules**
 
 ## Usage
 
@@ -67,28 +50,20 @@ You can then start your Django server in a separate tab like this:
 
 You're now all set and ready to start developing!
 
-### Adding Tailwind to additional templates
+## Debugging Set-Up Process
 
-By default, the landing_page, accounts and dashboard apps all have Tailwind integrated in their respective base.html files. 
+**You've tried 'python manage.py runserver' and seen this error:**
 
-However, if you'd like to create a new app and add Tailwind support, either inherit from the base.html files of the other apps or add the following tags to your new HTML templates:
+"You have # unapplied migration(s). Your project may not work properly until you apply the migrations for app(s):
+[list].
+Run 'python manage.py migrate' to apply them."
 
-```
-{% load static tailwind_tags %}
-...
-<head>
-   ...
-   {% tailwind_css %}
-   ...
-</head>
-```
+Exactly as it sounds! 'python manage.py makemigrations' was already ran so you have the migration files, you've just
+got to run 'python manage.py migrate' to make them run.
 
+**You've tried to run 'sh setup.sh' and seen this error:**
 
+"CommandError: It looks like node.js and/or npm is not installed or cannot be found..."
 
-## Contributing
-
-If you would like to contribute to this repository or notice any issues with the code, please feel free to fork this repository and submit your changes in a pull request. Any contributions that improve the functionality or usability of the project are welcome.
-
-## License
-
-Django Template is licensed under the MIT License, which means that you are free to use, modify, and distribute the project as you see fit. See the LICENSE file for more information.
+Whoops! 'npm' can't be found. Go into 'settings.py' and find the variable 'NPM_BIN_PATH' and copy the absolute
+path to 'npm.cmd' on your computer.

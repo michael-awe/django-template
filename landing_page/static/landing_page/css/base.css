@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Lexend Deca", sans-serif;
+  --black: #333;
+  --white: #fafafa;
+  --periwinkle: #d2ccfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content_container {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--white);
+}
+
+#message_div {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#content_div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+
+  gap: 1rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+#title_div {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title_div button {
+  font-family: var(--primary-font);
+  padding: 0.75rem;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #d6d6d6;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: all 0.1s ease;
+}
+
+header {
+  background-color: var(--periwinkle);
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo_div {
+  display: flex;
+  align-items: center;
+  color: var(--black);
+}
+
+#logo_div img {
+  margin-left: 0.5rem;
+  width: 85px;
+  height: auto;
+}
+
+#logo_div h1 {
+  margin-left: 0.5rem;
+  font-size: 50px;
+}
+
+#searchbar_div input {
+  padding: 0.75rem;
+  width: 30rem;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  background-color: #f4f4f4;
+}
+
+a:hover {
+  color: #a994b4;
+}
+
+#profile_div {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+#profile_div button {
+  font-family: Inter Tight, sans-serif;
+  padding: 0.75rem;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+#profile_pic {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#profile_pic img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#profile_pic img:active {
+  transform: scale(0.95);
+  transition: all 0.1s ease;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  height: 4rem;
+  align-items: center;
+  background-color: var(--black);
+  justify-content: center;
+  font-size: 20px;
+}
+
+nav a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+#links_div i {
+  font-size: 2rem;
+  color: var(--black);
+  background-color: var(--white);
+
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+#links_div i:hover {
+  color: var(--white);
+
+  background-color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#footer_nav {
+  padding: 1rem;
+}
+
+#footer_nav a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+#footer_nav a:hover {
+  color: #a994b4;
+}

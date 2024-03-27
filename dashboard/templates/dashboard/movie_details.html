@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title%}Movie Details{% endblock %}
+
+{% block content %}
+    <h1>{{ movie.name }}</h1>
+    <p>Year: {{ movie.year }}</p>
+{% endblock content %}

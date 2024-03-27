@@ -5,7 +5,6 @@ from django.http import HttpResponse
 from .forms import CustomUserCreationForm
 from .models import User
 
-# Create your views here.
 def login_view(request):
 
     #prevents access by logged in users
