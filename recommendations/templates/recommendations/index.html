@@ -1,10 +1,23 @@
-{% extends 'landing_page/base.html' %}
+{% extends 'recommendations/base.html' %}
 {% load static %}
-
 
 {% block content %}
 
-<h1>Recommendation Functionality Here!</h1>
+<div id="content_div">
 
+    <h1 id="question">Question #1</h1>
+    {% block form %}
+    <form action="{% url 'accounts:register' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="submit">
+
+    </form>
+
+    <!-- Number will change later -->
+    <h1 id="remaining">Remaining Films: 25,063</h1>
+</div>
+{% endblock %}
 
 {% endblock content %}

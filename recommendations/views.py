@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from .forms import GenreForm
 
 
 def recommend_view(request):
@@ -6,4 +7,9 @@ def recommend_view(request):
 
 
 def index(request):
-    return render(request, "recommendations/index.html")
+    form = GenreForm()
+    return render(
+        request,
+        "recommendations/index.html",
+        {"form": form},
+    )

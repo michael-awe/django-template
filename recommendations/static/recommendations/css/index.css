@@ -3,26 +3,28 @@
 
 :root {
   --primary-font: "Inter", sans-serif;
-  --heading-color: #092e20;
-}
-
-body {
-  font-family: var(--primary-font);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px 20px;
+  --heading-color: black;
+  --footer-color: green;
 }
 
 li {
   margin: 5px 0px;
 }
 
-h1 {
+#question {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 5vh;
   color: var(--heading-color);
+  text-align: center;
+}
+
+#remaining {
+  font-weight: 600;
+  font-size: 4vh;
+  color: var(--footer-color);
+  text-align: center;
+  padding-bottom: 1%;
+  bottom: 0;
 }
 
 h2 {
