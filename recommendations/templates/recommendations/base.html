@@ -1,22 +1,64 @@
-{% load static %}
-{% load static tailwind_tags %}
+{% load static %} {% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        {% tailwind_css %}
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="{% static 'landing_page/images/favicon.png' %}"
-            type="image/x-icon">
-        <link rel="stylesheet" href="{% static 'recommendations/css/index.css' %}">
-        <title>Recommendations: Main Page</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/c60455fa26.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static 'landing_page/css/base.css' %}" />
+        <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
+        <link rel="stylesheet" href="{% static 'recommendations/css/index.css' %}" />
+        <title>ReeldIn</title>
     </head>
 
+    <header>
+        <div id="logo_div">
+            <img src="{% static 'landing_page/images/REELDIN.png' %}"
+                alt="ReeldIn Logo" />
+            <h1>ReeldIn</h1>
+        </div>
+        <div id="searchbar_div">
+            <input type="text" id="searchbar" name="searchbar"
+                placeholder="Search for movies..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="profile_div">
+            <button id="login_button">Login</button>
+            <img id="profile_pic" src="{% static 'landing_page/images/profile.png' %}" />
+            </img>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+
     <body>
-        {% block content %}
-        {% endblock content %}
+        {% block content %} {% endblock content %}
     </body>
+
+    <!-- <footer>
+        <div id="links_div">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div id="footer_nav">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="search.html">Search</a>
+            <a href="20Qs.html">20 Questions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="team.html">Our Team</a>
+        </div>
+        <div id="copyright">
+            <p>ReeldIn 2024 &copy;</p>
+        </div>
+    </footer> -->
 
 </html>
