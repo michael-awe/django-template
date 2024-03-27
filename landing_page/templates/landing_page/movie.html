@@ -1,0 +1,24 @@
+{% extends 'landing_page/base.html' %} {% load static %} {% block content %}
+
+<div id="message_div">
+    <h1>Movie Info Page</h1>
+</div>
+<div id="content_div">
+    <div style="display: flex">
+        <h2>Movie Name Here</h2>
+        <div class="content_container" style="position: relative; left: 19rem;">
+            <button id="get_overview">Overview</button>
+            <button id="get_details">Details</button>
+            <button id="get_watching">Watching</button>
+            <button id="get_optinions">Opinions</button>
+        </div>
+    </div>
+    <div class="content_container">
+        <img 
+            src="{% static 'landing_page/images/darkknight.webp' %}"
+            alt="The Batman Movie Poster" 
+            />
+        <p>The Movie Overview Summary Here</p>
+    </div>
+</div>    
+{% endblock content %}
