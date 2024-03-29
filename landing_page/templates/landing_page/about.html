@@ -1,15 +1,16 @@
 {% extends 'landing_page/base.html' %} {% load static %} {% block content %}
 
+<link rel="stylesheet" href="{% static 'landing_page/css/about.css' %}" />
+
 <div id="message_div">
   <h1>Learn More about ReeldIn</h1>
 </div>
-<div id="content_div">
+<div class="content_div">
   <div id="title_div">
     <h2>What is ReeldIn?</h2>
-    <button id="get_recommendations_btm">Get Recommendations</button>
   </div>
 
-  <div class="about_div content_container">
+  <div class="about_div">
     <p>
       Movies are a highly valued creative outlet and pastime, but frequently,
       it's hard to choose one. With millions available and more releasing daily,
@@ -18,6 +19,33 @@
       efficient. We use a combination of user input and machine learning to
       provide the best recommendations possible. We're here to make your
       movie-watching experience as enjoyable as possible.
+    </p>
+
+    <br />
+    <h2>FAQ</h2>
+    <br />
+    <h3>Q: How do I make an account?<br /></h3>
+    <br />
+    <p>
+      A: To make an account, click the "Login" button in the top right corner of
+      the page. You'll be prompted to input your email and password. Once you've
+      done that, you'll have access to all of ReeldIn's features.
+    </p>
+    <br />
+    <h3>Q: How do I get recommendations? <br /></h3>
+    <br />
+    <p>
+      A: To get recommendations, click the "Get Recommendations" button on the
+      home page. You'll be prompted to input your favorite movies, and ReeldIn
+      will provide you with a list of similar movies.
+    </p>
+    <br />
+    <h3>Q: How does ReeldIn work? <br /></h3>
+    <br />
+    <p>
+      A: ReeldIn uses a combination of user input and machine learning to
+      provide the best recommendations possible. Users can input their favorite
+      movies, and ReeldIn will use that information to suggest similar movies.
     </p>
   </div>
 </div>

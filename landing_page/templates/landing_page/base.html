@@ -14,17 +14,22 @@
       href="{% static 'landing_page/css/base.css' %}"
     />
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
-    <link rel="stylesheet" href="{% static 'landing_page/css/about.css' %}" />
+
     <title>ReeldIn</title>
   </head>
 
   <header>
+  
     <div id="logo_div">
+      <a href="{% url 'landing_page:index' %}">
       <img
         src="{% static 'landing_page/images/REELDIN.png' %}"
         alt="ReeldIn Logo"
       />
+      </a>
+      <a href="{% url 'landing_page:index' %}">
       <h1>ReeldIn</h1>
+      </a>
     </div>
     <div id="searchbar_div">
       <input
@@ -36,7 +41,10 @@
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="profile_div">
+      <button id="get_recommendations_btn">Get Recommendations</button>
+      <a href="{% url 'accounts:login' %}">
       <button id="login_button">Login</button>
+      </a>
       <img id="profile_pic"
       src="{% static 'landing_page/images/profile.png' %}"
     />
@@ -44,8 +52,8 @@
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="{% url 'landing_page:index' %}">Home</a>
+    <a href="{% url 'landing_page:about' %}">About</a>
   </nav>
 
   <body>
@@ -53,19 +61,13 @@
   </body>
 
   <footer>
-    <div id="links_div">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </div>
     <div id="footer_nav">
-      <a href="index.html">Home</a>
+      <a href="{% url 'landing_page:index' %}">Home</a>
       <a href="profile.html">Profile</a>
       <a href="search.html">Search</a>
       <a href="20Qs.html">20 Questions</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="{% url 'landing_page:about' %}">About</a>
+      <a href="{% url 'landing_page:contact' %}">Contact Us</a>
       <a href="team.html">Our Team</a>
     </div>
     <div id="copyright">

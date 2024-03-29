@@ -1,0 +1,96 @@
+{% extends 'landing_page/base.html' %} {% load static %} {% block content %}
+
+<!-- 
+The following files have been adapted from "html-form-examples-templates" by FormBold
+- accounts/templates/accounts/contact.html
+- accounts/static/accounts/css/contact.css
+
+Github Repo: https://github.com/FormBold/html-form-examples-templates
+Learn More: https://formbold.com
+-->
+
+<link rel="stylesheet" href="{% static 'landing_page/css/contact.css' %}" />
+
+<div id="message_div">
+  <h1 id="title">Contact Us</h1>
+</div>
+<div class="content_div">
+  <div class="content_container">
+    <div class="formbold-form-wrapper">
+      <!-- https://formsubmit.co/> -->
+      <form action="https://formsubmit.co/temp@email.com" method="POST">
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Full Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="subject" class="formbold-form-label"> Subject </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="message" class="formbold-form-label"> Message </label>
+          <textarea
+            rows="6"
+            name="message"
+            id="message"
+            placeholder="Type your message"
+            class="formbold-form-input"
+          ></textarea>
+        </div>
+
+        <div>
+          <button class="formbold-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- MIT License
+
+Copyright (c) 2022 FormBold
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
