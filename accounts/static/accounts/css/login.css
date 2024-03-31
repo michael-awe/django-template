@@ -139,21 +139,6 @@ body {
   }
 }
 
-.social-icons {
-  margin: 20px 0;
-}
-
-.social-icons a {
-  border: 1px solid #ccc;
-  border-radius: 20%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3px;
-  width: 40px;
-  height: 40px;
-}
-
 .toggle-container {
   position: absolute;
   top: 0;
@@ -218,83 +203,4 @@ body {
 
 .container.active .toggle-right {
   transform: translateX(200%);
-}
-
-/* ADAPTIVE  for mobile devices */
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: center;
-    overflow: hidden;
-    width: 330px;
-    max-width: 100%;
-    min-height: 500px;
-  }
-  .social-icons a {
-    font-size: 10px;
-    border-radius: 30%;
-    margin: 1px 3px 3px;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-  }
-  .toggle-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 0.6s ease-in-out;
-    border-radius: 75px 0 0 50px;
-    z-index: 500;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  .span {
-    font-size: 3px;
-  }
-  a {
-    font-size: 5px;
-  }
-  .container form {
-    font-size: 15px;
-  }
-  .container input {
-    border: none;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 10px;
-    border-radius: 8px;
-    width: 120%;
-    outline: none;
-  }
-  .container button {
-    background-color: #f12711;
-    color: #fff;
-    font-size: 11px;
-    padding: 5px 25px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  .sign-in {
-    left: 0;
-    width: 50%;
-    z-index: 1;
-  }
-  .sign-up {
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-  }
 }

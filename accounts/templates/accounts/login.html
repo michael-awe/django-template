@@ -2,7 +2,7 @@
 
 <div class="container" id="container">
   <div class="form-container sign-up">
-    <form action="{% url 'accounts:login' %}" method="post">
+    <form action="{% url 'accounts:register' %}" method="post">
       {% csrf_token %}
       <h1>Create Account</h1>
       <input type="text" placeholder="Name" />
@@ -13,7 +13,7 @@
   </div>
 
   <div class="form-container sign-in">
-    <form action="{% url 'accounts:register' %}" method="post">
+    <form action="{% url 'accounts:login' %}" method="post">
       {% csrf_token %}
       <h1>Sign In</h1>
       <input type="email" placeholder="Email" />
