@@ -3,4 +3,7 @@ from . import views
 
 app_name = "landing_page"
 
-urlpatterns = [path("", views.index, name="index")]
+urlpatterns = [path("", views.index, name="index"),
+                path("", views.about, name="about"),
+                path("", views.movie, name="movie")
+               ]

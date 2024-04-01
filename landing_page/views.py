@@ -7,3 +7,8 @@ def index(request):
 
 
 # Add other views here
+def movie(request):
+    return render(request, "landing_page/movie.html")
+
+def about(request):
+    return render(request, "landing_page/about.html")
