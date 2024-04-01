@@ -1,0 +1,74 @@
+{% extends 'landing_page/base.html' %} {% load static %} {% block content %}
+
+<!-- 
+The following files have been adapted from "html-form-examples-templates" by FormBold
+- accounts/templates/accounts/contact.html
+- accounts/static/accounts/css/contact.css
+
+Github Repo: https://github.com/FormBold/html-form-examples-templates
+Learn More: https://formbold.com
+-->
+
+<link rel="stylesheet" href="{% static 'landing_page/css/contact.css' %}" />
+
+<div id="message_div">
+  <h1 id="title">Contact Us</h1>
+</div>
+<div class="content_div">
+  <div class="content_container">
+    <div class="formbold-form-wrapper">
+      <!-- https://formsubmit.co/> -->
+      <form action="https://formsubmit.co/temp@email.com" method="POST">
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Full Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="subject" class="formbold-form-label"> Subject </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
+            class="formbold-form-input"
+          />
+        </div>
+
+        <div class="formbold-mb-5">
+          <label for="message" class="formbold-form-label"> Message </label>
+          <textarea
+            rows="6"
+            name="message"
+            id="message"
+            placeholder="Type your message"
+            class="formbold-form-input"
+          ></textarea>
+        </div>
+
+        <div>
+          <button class="formbold-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

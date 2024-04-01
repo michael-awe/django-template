@@ -1,10 +1,13 @@
-{% extends 'dashboard/base.html' %}
-{% load static %}
+{% extends 'landing_page/base.html' %} {% load static %} {% block content %}
 
-{% block title%}404{% endblock %}
+<link rel="stylesheet" href="{% static 'dashboard/css/404.css' %}" />
+<div class="content_div error_div">
+  <h1>Oops! Page Not Found</h1>
+  <p>The requested page does not exist.</p>
+  <h1 id="error">404</h1>
+  <a href="{% url 'landing_page:index' %}">
+    <button>Back to Home</button>
+  </a>
+</div>
 
-{% block content %}
-    <h1>Oops! Page Not Found</h1>
-    <p>The requested page does not exist.</p>
-    
 {% endblock content %}
