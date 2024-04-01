@@ -3,7 +3,31 @@
 
 {% block title%}Movie Details{% endblock %}
 
+<script>
+    $(document).ready(function() {
+        $("#delete-movie-btn").on("click", function() {
+            const movieId = $(this).data("movie-id");
+            const confirmDelete = confirm("Are you sure you want to delete this movie?");
+            if (confirmDelete) {
+                // Make an AJAX request to delete the movie
+                $.ajax({
+                    url: `/movies/${movieId}/delete/`,
+                    method: "POST",
+                    success: function(response) {
+                        console.log("Movie deleted successfully!");
+                    },
+                    error: function(error) {
+                        console.error("Error deleting movie:", error);
+                    }
+                });
+            }
+        });
+    });
+</script>
+
 {% block content %}
     <h1>{{ movie.name }}</h1>
     <p>Year: {{ movie.year }}</p>
+
+    <button id="delete-movie-button" data-movie-id="123">Delete Movie</button>
 {% endblock content %}
