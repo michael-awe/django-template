@@ -1,54 +1,44 @@
 {% load static %} {% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/c60455fa26.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="{% static 'landing_page/css/base.css' %}"
-    />
+    <script src="https://kit.fontawesome.com/c60455fa26.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'landing_page/css/base.css' %}" />
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
     <title>ReeldIn</title>
   </head>
 
   <header>
-  
+
     <div id="logo_div">
       <a href="{% url 'landing_page:index' %}">
-      <img
-        src="{% static 'landing_page/images/REELDIN.png' %}"
-        alt="ReeldIn Logo"
-      />
+        <img src="{% static 'landing_page/images/REELDIN.png' %}" alt="ReeldIn Logo" />
       </a>
       <a href="{% url 'landing_page:index' %}">
-      <h1>ReeldIn</h1>
+        <h1>ReeldIn</h1>
       </a>
     </div>
     <div id="searchbar_div">
-      <input
-        type="text"
-        id="searchbar"
-        name="searchbar"
-        placeholder="Search for movies..."
-        onkeydown="searchMovies(event)"
-      />
+      <input type="text" id="searchbar" name="searchbar"
+        placeholder="Search for movies..." onkeydown="searchMovies(event)" />
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="profile_div">
-      <button id="get_recommendations_btn">Get Recommendations</button>
-      <a href="{% url 'accounts:login' %}">
-      <button id="login_button">Login</button>
+      <a href="{% url 'recommendations:index' %}">
+        <button id="get_recommendations_btm">
+          Get Recommendations
+        </button>
       </a>
-      <img id="profile_pic"
-      src="{% static 'landing_page/images/profile.png' %}"
-    />
-    </img>
+      <a href="{% url 'accounts:login' %}">
+        <button id="login_button">Login</button>
+      </a>
+      <img id="profile_pic" src="{% static 'landing_page/images/profile.png' %}" />
+      </img>
   </header>
 
   <nav>
@@ -74,4 +64,5 @@
       <p>ReeldIn 2024 &copy;</p>
     </div>
   </footer>
+
 </html>
