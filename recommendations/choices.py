@@ -216,7 +216,7 @@ LANGUAGES = [
     ("yo", "Yoruba"),
 ]
 
-TRIGGERS = categories = [
+TRIGGERS = [
     ("Category", "Category"),
     ("Animal", "Animal"),
     ("Abandonment", "Abandonment"),

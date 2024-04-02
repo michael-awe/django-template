@@ -28,6 +28,7 @@
       "watch_providers": ["Criterion Channel"],
       "tmdb_id": 2,
       "imdb_rating": 7.4,
+      "imdb_votes": 8200,
       "keywords": [
         "prison",
         "underdog",
@@ -35,8 +36,7 @@
         "factory worker",
         "prisoner",
         "falling in love"
-      ],
-      "triggers": []
+      ]
     }
   }
 ]
