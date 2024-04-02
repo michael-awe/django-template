@@ -4,8 +4,8 @@ from .choices import *
 
 
 class Movie(models.Model):
-    name = models.CharField(max_length=30)
-    genre = models.CharField(max_length=13, choices=GENRES)
+    name = models.CharField(max_length=80)
+    genres = models.ArrayField(max_length=13, choices=GENRES)
     year = models.PositiveIntegerField()
     runtime = models.PositiveIntegerField()
     language = models.CharField(max_length=30, choices=LANGUAGES)
@@ -31,5 +31,5 @@ class Movie(models.Model):
 
 
 class Recommendation(models.Model):
-    genre = models.CharField(max_length=13, choices=GENRES)
+    genre = models.ArrayField(max_length=13, choices=GENRES)
     year_span = models.PositiveIntegerField(choices=YEAR_SPANS)
