@@ -1,0 +1,42 @@
+[
+  {
+    "model": "recommendations.movie",
+    "pk": 1,
+    "fields": {
+      "name": "Ariel",
+      "budget": 0,
+      "poster": "/ojDg0PGvs6R9xYFodRct2kdI6wC.jpg",
+      "year": "1988",
+      "revenue": 0,
+      "runtime": 73,
+      "genre": ["Comedy", "Drama", "Romance", "Crime"],
+      "language": "fi",
+      "overview": "After the coal mine he works at closes and his father commits suicide, a Finnish man leaves for the city to make a living but there, he is framed and imprisoned for various crimes.",
+      "tagline": "",
+      "director": ["Aki Kaurismäki"],
+      "writer": ["Aki Kaurismäki"],
+      "producer": ["Aki Kaurismäki"],
+      "cinematographer": ["Timo Salminen"],
+      "composer": [],
+      "starring": [
+        "Turo Pajala",
+        "Susanna Haavisto",
+        "Matti Pellonpää",
+        "Eetu Hilkamo",
+        "Erkki Pajala"
+      ],
+      "watch_providers": ["Criterion Channel"],
+      "tmdb_id": 2,
+      "imdb_rating": 7.4,
+      "imdb_votes": 8200,
+      "keywords": [
+        "prison",
+        "underdog",
+        "helsinki, finland",
+        "factory worker",
+        "prisoner",
+        "falling in love"
+      ]
+    }
+  }
+]
