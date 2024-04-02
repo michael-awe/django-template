@@ -1,1 +1,7 @@
-
+.about_div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}

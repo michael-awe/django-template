@@ -1,24 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&display=swap");
 
-:root {
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Lexend Deca", sans-serif;
-  --black: #333;
-  --white: #fafafa;
-  --periwinkle: #d2ccfc;
-}
-
-body {
-  font-family: var(--primary-font);
-  background-color: var(--periwinkle);
-}
-
 .movies_div {
   overflow-x: auto;
 }
 
 footer {
-  position: static;
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: var(--black);
