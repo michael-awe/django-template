@@ -9,20 +9,27 @@ class Movie(models.Model):
     year = models.PositiveIntegerField()
     runtime = models.PositiveIntegerField()
     language = models.CharField(max_length=30, choices=LANGUAGES)
+    budget = models.PositiveIntegerField(default=0)
+    revenue = models.PositiveIntegerField(default=0)
+
+    poster = models.TextField()
+    overview = models.TextField()
+    tagline = models.TextField()
 
     # people
-    top_cast = ArrayField(models.CharField(max_length=60))
-    directors = ArrayField(models.CharField(max_length=60))
-    writers = ArrayField(models.CharField(max_length=60))
+    starring = ArrayField(models.CharField(max_length=60))
+    director = ArrayField(models.CharField(max_length=60))
+    writer = ArrayField(models.CharField(max_length=60))
     cinematographer = ArrayField(models.CharField(max_length=60))
     composer = ArrayField(models.CharField(max_length=60))
 
-    uh = ArrayField(models.CharField(max_length=60, choices=TRIGGERS))
+    triggers = ArrayField(models.CharField(max_length=60, choices=TRIGGERS))
     watch_providers = ArrayField(models.CharField(max_length=60))
-    tmdb_keywords = ArrayField(models.CharField(max_length=60))
+    keywords = ArrayField(models.CharField(max_length=60))
     tmdb_id = models.PositiveIntegerField()
+    imdb_rating = models.DecimalField(max_digits=10, decimal_places=2)
 
 
 class Recommendation(models.Model):
-    genre = models.CharField(max_length=13, , choices=GENRES)
+    genre = models.CharField(max_length=13, choices=GENRES)
     year_span = models.PositiveIntegerField(choices=YEAR_SPANS)
