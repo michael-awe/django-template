@@ -5,5 +5,7 @@ app_name = "landing_page"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("search/movies", views.search_movies, name="search_movies"),
+    path("about/", views.about, name="about"),
+    path("contact/", views.contact, name="contact"),
+    path("search/movies", views.search_movies, name="search_movies")
 ]
