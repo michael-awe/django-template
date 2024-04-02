@@ -23,11 +23,11 @@ class Movie(models.Model):
     cinematographer = ArrayField(models.CharField(max_length=60))
     composer = ArrayField(models.CharField(max_length=60))
 
-    triggers = ArrayField(models.CharField(max_length=60, choices=TRIGGERS))
     watch_providers = ArrayField(models.CharField(max_length=60))
     keywords = ArrayField(models.CharField(max_length=60))
     tmdb_id = models.PositiveIntegerField()
     imdb_rating = models.DecimalField(max_digits=10, decimal_places=2)
+    imdb_votes = models.PositiveIntegerField()
 
 
 class Recommendation(models.Model):
