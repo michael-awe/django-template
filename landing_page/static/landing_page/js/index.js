@@ -4,6 +4,6 @@ function searchMovies(event) {
         searchString = event.target.value.trim()
         
         // Route to search movies
-        window.location.href = "search/movies?query=" + encodeURIComponent(searchString)
+        window.location.href = window.location.origin + "/search/movies?query=" + encodeURIComponent(searchString)
     }
 }
