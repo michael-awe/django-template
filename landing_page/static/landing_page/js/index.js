@@ -1,18 +1,28 @@
 function searchMovies(event) {
+    searchString = event.target.value.trim()
     // Enter key
-    if (event.key === "Enter" && event.target.value.trim()) {
-        searchString = event.target.value.trim()
-        console.log(searchString)
-
-        fetch("search/movies?query=" + encodeURIComponent(searchString))
+    if (event.key === "Enter" && searchString) {
+        // Route to search movies
+        window.location.href = window.location.origin + "/search/movies?query=" + encodeURIComponent(searchString)
+    } else if (event.key !== "Backspace" && searchString) {
+        fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ search: searchString })
+        })
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error("Network response was not ok");
             }
-            console.log("Request successful");
+            return response.json();
+        })
+        .then(data => {
+            console.log(data)
         })
         .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
+            console.error("Fetch error:", error);
         });
     }
 }

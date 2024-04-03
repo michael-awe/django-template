@@ -6,9 +6,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/c60455fa26.js"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'landing_page/css/base.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/c60455fa26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'landing_page/js/index.js' %}" defer></script>
+    <link
+      rel="stylesheet"
+      href="{% static 'landing_page/css/base.css' %}"
+    />
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
     <title>ReeldIn</title>
   </head>
@@ -24,8 +30,13 @@
       </a>
     </div>
     <div id="searchbar_div">
-      <input type="text" id="searchbar" name="searchbar"
-        placeholder="Search for movies..." onkeydown="searchMovies(event)" />
+      <input
+        type="text"
+        id="searchbar"
+        name="searchbar"
+        placeholder="Search for movies..."
+        onkeyup="searchMovies(event)"
+      />
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <div id="profile_div">
