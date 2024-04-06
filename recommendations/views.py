@@ -1,9 +1,15 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse
+from django.shortcuts import render
+from .forms import GenreForm
 
 
 def recommend_view(request):
+    print(request)
 
-    if request.method == "POST":
-        answers = request.POST["answers"]
+
+def index(request):
+    form = GenreForm()
+    return render(
+        request,
+        "recommendations/index.html",
+        {"form": form},
+    )

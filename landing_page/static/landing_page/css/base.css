@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Lexend Deca", sans-serif;
+  --tertiary-font: "Montserrat", sans-serif;
   --black: #333;
   --white: #fafafa;
   --periwinkle: #d2ccfc;
@@ -14,18 +16,33 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a994b4;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--periwinkle);
+}
+
 .content_container {
   display: flex;
-  gap: 1rem;
   background-color: var(--white);
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 #message_div {
   text-align: center;
   margin: 1.5rem;
+  font-family: var(--tertiary-font);
 }
 
-#content_div {
+.content_div {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
@@ -44,17 +61,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-#title_div button {
-  font-family: var(--primary-font);
-  padding: 0.75rem;
-  font-size: 20px;
-  font-weight: 600;
-  border: none;
-  background-color: #d6d6d6;
-  cursor: pointer;
-  border-radius: 10px;
 }
 
 button:hover {
@@ -94,6 +100,14 @@ header {
   font-size: 50px;
 }
 
+#logo_div a:hover {
+  color: var(--black);
+}
+
+#logo_div a {
+  color: var(--black);
+}
+
 #searchbar_div input {
   padding: 0.75rem;
   width: 30rem;
@@ -102,10 +116,6 @@ header {
   border-radius: 12px;
   margin-right: 0.5rem;
   background-color: #f4f4f4;
-}
-
-a:hover {
-  color: #a994b4;
 }
 
 #profile_div {
@@ -157,7 +167,6 @@ nav {
 
 nav a {
   color: #f4f4f4;
-  text-decoration: none;
 }
 
 #links_div i {
@@ -176,6 +185,16 @@ nav a {
   background-color: var(--black);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
 }
 
 #footer_nav {
