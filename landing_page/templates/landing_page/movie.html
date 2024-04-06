@@ -1,5 +1,6 @@
 {% extends 'landing_page/base.html' %} {% load static %} {% block content %}
 <link rel="stylesheet" href="{% static 'landing_page/css/movie.css' %}" />
+<script src="{% static 'landing_page/js/movie.js' %}"></script>
 <div id="message_div">
     <h1>Movie Info Page</h1>
 </div>
@@ -13,21 +14,7 @@
         <button id="movie-button" onclick="movieWatching()">Watching</button>
         <button id="movie-button" onclick="movieOptions()">Opinions</button>
     </div>
-    <script>
-            function movieOverview(){
-                document.getElementById("movie_summary").innerHTML = `Description of <b>Batman</b> Movie.
-                <div> More Information Here</div>`;
-            }
-            function movieDetails(){
-                document.getElementById("movie_summary").innerHTML = "Movie Genre";
-            }
-            function movieWatching(){
-                document.getElementById("movie_summary").innerHTML = "Movie Streaming/Buy/Rent";
-            }
-            function movieOptions(){
-                document.getElementById("movie_summary").innerHTML = "Movie Comment/Rating/etc.";
-            }
-    </script>
+
 </div>
 <div class="content_container">
     <img 
