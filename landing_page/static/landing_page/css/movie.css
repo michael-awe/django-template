@@ -5,6 +5,7 @@
     border-radius: 12px;
     color: var(--black);
     text-align: center;
+    font-family: var(--primary-font);
 }
 
 #movie_summary {
@@ -12,11 +13,21 @@
     font-family: var(--primary-font);
     color: var(--black);
     background-color: var(--white);
+    /* content box not too close to other things */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 #movie_name {
     font-size: 32px;
     display: flex;
     column-gap: 16cqmax;
+    background-color: var(--white);
+    font-family: var(--primary-font);
+    /* content box not too close to other things */
+    margin-left: 1rem;
+    margin-right: 1rem;
 
 }
 

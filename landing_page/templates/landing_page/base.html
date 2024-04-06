@@ -54,8 +54,10 @@
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="{% url 'landing_page:index' %}"> Home</a>
+    <a href="{% url 'landing_page:about' %}">About</a>
+    <!-- remove movie tab from nav later, testing only-->
+    <a href="{% url 'landing_page:movie' %}">movie</a>
   </nav>
 
   <body>

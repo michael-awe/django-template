@@ -7,11 +7,27 @@
 <div id="movie_name">
     <h2>Dark Knight</h2>
     <div id="movie_button_nav">
-        <button id="movie-button">Overview</button>
-        <button id="movie-button">Details </button>
-        <button id="movie-button">Watching</button>
-        <button id="movie-button">Opinions</button>
+        <!-- For testing purposes -->
+        <button id="movie-button" onclick="movieOverview()">Overview</button>
+        <button id="movie-button" onclick="movieDetails()">Details </button>
+        <button id="movie-button" onclick="movieWatching()">Watching</button>
+        <button id="movie-button" onclick="movieOptions()">Opinions</button>
     </div>
+    <script>
+            function movieOverview(){
+                document.getElementById("movie_summary").innerHTML = `Description of <b>Batman</b> Movie.
+                <div> More Information Here</div>`;
+            }
+            function movieDetails(){
+                document.getElementById("movie_summary").innerHTML = "Movie Genre";
+            }
+            function movieWatching(){
+                document.getElementById("movie_summary").innerHTML = "Movie Streaming/Buy/Rent";
+            }
+            function movieOptions(){
+                document.getElementById("movie_summary").innerHTML = "Movie Comment/Rating/etc.";
+            }
+    </script>
 </div>
 <div class="content_container">
     <img 
