@@ -446,7 +446,7 @@ STREAMING = [
     ("Criterion Channel", "Criterion Channel"),
     ("Crunchyroll", "Crunchyroll"),
     ("Disney Plus", "Disney Plus"),
-    ("HBO Max/Max", "HBO Max/Max"),
+    ("Max", "Max"),
     ("Hulu", "Hulu"),
     ("MUBI", "MUBI"),
     ("Netflix", "Netflix"),
