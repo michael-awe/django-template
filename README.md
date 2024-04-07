@@ -10,11 +10,7 @@ Professor: Michael McKisson
 
 Find licenses for externally used projects in 'documentation/external_licenses'.
 
-Uses <a href="https://github.com/michael-awe/django-template">django-template</a>.
-
-Uses <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>.
-
-Uses <a href="https://github.com/capwan/Animated-LoginForm">Animated-LoginForm</a>.
+Uses <a href="https://github.com/michael-awe/django-template">django-template</a>, <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>, and <a href="https://github.com/capwan/Animated-LoginForm">Animated-LoginForm</a>.
 
 Watch the videos found in 'documentation/video_urls.txt' and read what's below. If there's
 conflicting information, follow what's written here instead.
