@@ -26,7 +26,15 @@ YEAR_SPANS = [
     (2000, "2000 >"),
 ]
 
+RUNTIME_SPANS = [
+    (90, "< 90"),
+    (120, "90-120"),
+    (150, "120-150"),
+    (151, "150 >"),
+]
+
 LANGUAGES = [
+    ("", "No Preference"),
     ("an", "Aragonese"),
     ("ak", "Akan"),
     ("cr", "Cree"),
@@ -217,6 +225,7 @@ LANGUAGES = [
 ]
 
 TRIGGERS = [
+    ("", "No Triggers"),
     ("animals are abused", "Animals Are Abused"),
     ("a cat dies", "A Cat Dies"),
     ("an animal dies", "An Animal Dies"),
@@ -428,4 +437,20 @@ TRIGGERS = [
     ("someone drowns", "Someone Drowns"),
     ("there's gun violence", "There's Gun Violence"),
     ("there's a nuclear explosion", "There's a Nuclear Explosion"),
+]
+
+STREAMING = [
+    ("", "No Preference"),
+    ("Amazon Prime Video", "Amazon Prime Video"),
+    ("Apple TV Plus", "Apple TV Plus"),
+    ("Criterion Channel", "Criterion Channel"),
+    ("Crunchyroll", "Crunchyroll"),
+    ("Disney Plus", "Disney Plus"),
+    ("Max", "Max"),
+    ("Hulu", "Hulu"),
+    ("MUBI", "MUBI"),
+    ("Netflix", "Netflix"),
+    ("Paramount Plus", "Paramount Plus"),
+    ("Peacock Premium", "Peacock Premium"),
+    ("Shudder", "Shudder"),
 ]

@@ -6,8 +6,11 @@ Mentor: Greg Chism
 
 Professor: Michael McKisson
 
-Uses <a href="https://github.com/michael-awe/django-template">django-template</a>.
-Find their license, changelog, and read-me in the files with the prefix 'django-template'.
+## External Usage
+
+Find licenses for externally used projects in 'documentation/external_licenses'.
+
+Uses <a href="https://github.com/michael-awe/django-template">django-template</a>, <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>, and <a href="https://github.com/capwan/Animated-LoginForm">Animated-LoginForm</a>.
 
 Uses <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>.
 Find their license at 'formbold-LICENSE.txt'.
