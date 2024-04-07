@@ -27,6 +27,22 @@ li {
   bottom: 0;
 }
 
+#recommendation_space {
+  width: 50vw;
+  margin: auto;
+}
+
+#id_Question {
+  width: 100vw;
+  background-color: var(--periwinkle);
+  border-width: 0px;
+  color: black;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
 h2 {
   font-weight: 600;
   font-size: 28px;

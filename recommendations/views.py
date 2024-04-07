@@ -1,9 +1,15 @@
 from django.shortcuts import render
-from .forms import GenreForm
+from .forms import *
+from .models import Recommendation
 
 
 def recommend_view(request):
-    print(request)
+    form = YearForm()
+    return render(
+        request,
+        "recommendations/index.html",
+        {"form": form},
+    )
 
 
 def index(request):
