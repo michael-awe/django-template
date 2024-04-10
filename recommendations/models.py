@@ -35,7 +35,7 @@ class Recommendation(models.Model):
     possible_film_count = models.PositiveIntegerField()
 
     # answers
-    genre = ArrayField(models.CharField(max_length=13, choices=GENRES))
+    genres = ArrayField(models.CharField(max_length=13, choices=GENRES))
     year_span = models.PositiveIntegerField(choices=YEAR_SPANS)
     runtime_span = models.PositiveIntegerField(choices=RUNTIME_SPANS)
     languages = ArrayField(models.CharField(max_length=2, choices=LANGUAGES))
