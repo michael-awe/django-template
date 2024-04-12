@@ -27,6 +27,28 @@ li {
   bottom: 0;
 }
 
+#recommendation_space {
+  width: 75vw;
+  height: 60vh;
+  margin: auto;
+}
+
+#id_Question {
+  width: 75vw;
+  background-color: var(--periwinkle);
+  border-width: 0px;
+  color: black;
+}
+
+p, input, label {
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
 h2 {
   font-weight: 600;
   font-size: 28px;

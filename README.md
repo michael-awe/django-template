@@ -12,12 +12,6 @@ Find licenses for externally used projects in 'documentation/external_licenses'.
 
 Uses <a href="https://github.com/michael-awe/django-template">django-template</a>, <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>, and <a href="https://github.com/capwan/Animated-LoginForm">Animated-LoginForm</a>.
 
-Uses <a href="https://github.com/FormBold/html-form-examples-templates">html-form-examples-templates</a>.
-Find their license at 'formbold-LICENSE.txt'.
-
-Uses <a href="https://github.com/capwan/Animated-LoginForm">Animated-LoginForm</a>.
-Find their license at 'animated-login-LICENSE.txt'.
-
 Watch the videos found in 'documentation/video_urls.txt' and read what's below. If there's
 conflicting information, follow what's written here instead.
 

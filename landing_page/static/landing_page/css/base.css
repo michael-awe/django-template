@@ -118,6 +118,14 @@ header {
   background-color: #f4f4f4;
 }
 
+#searched_movies_container {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: -10px;
+}
+
 #profile_div {
   display: flex;
   align-items: center;

@@ -4,6 +4,17 @@
   overflow-x: auto;
 }
 
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+
+  padding: 1rem;
+  text-align: center;
+}
+
 .movie {
   display: flex;
   flex-direction: column;

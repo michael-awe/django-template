@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% csrf_token %}
     <script
       src="https://kit.fontawesome.com/c60455fa26.js"
       crossorigin="anonymous"
@@ -16,7 +17,9 @@
       href="{% static 'landing_page/css/base.css' %}"
     />
     <link rel="stylesheet" href="{% static 'landing_page/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'landing_page/css/about.css' %}" />
     <title>ReeldIn</title>
+    
   </head>
 
   <header>
@@ -38,6 +41,7 @@
         onkeyup="searchMovies(event)"
       />
       <i class="fa-solid fa-magnifying-glass"></i>
+      <div id="searched_movies_container"></div>
     </div>
     <div id="profile_div">
       <a href="{% url 'recommendations:index' %}">
@@ -53,11 +57,14 @@
   </header>
 
   <nav>
-    <a href="{% url 'landing_page:index' %}">Home</a>
+    <a href="{% url 'landing_page:index' %}"> Home</a>
     <a href="{% url 'landing_page:about' %}">About</a>
+    <!-- remove movie tab from nav later, testing only-->
+    <a href="{% url 'landing_page:movie' %}">movie</a>
   </nav>
 
   <body>
+    <input type="hidden" id="csrf_token" value="{% csrf_token %}">
     {% block content %} {% endblock content %}
   </body>
 
