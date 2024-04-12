@@ -4,13 +4,13 @@ from .choices import *
 
 
 class Movie(models.Model):
-    name = models.CharField(max_length=80)
+    name = models.CharField(max_length=105)
     genres = ArrayField(models.CharField(max_length=13, choices=GENRES))
     year = models.PositiveIntegerField()
     runtime = models.PositiveIntegerField()
     language = models.CharField(max_length=2, choices=LANGUAGES)
-    budget = models.PositiveIntegerField(default=0)
-    revenue = models.PositiveIntegerField(default=0)
+    budget = models.BigIntegerField(default=0)
+    revenue = models.BigIntegerField(default=0)
 
     poster = models.TextField()
     overview = models.TextField()
