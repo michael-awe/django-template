@@ -4,7 +4,7 @@ asgiref==3.8.1
 binaryornot==0.4.4
 certifi==2024.6.2
 chardet==5.2.0
-charset-normalizer==3.3.1
+charset-normalizer==3.3.2
 click==8.1.7
 cookiecutter==2.6.0
 Django==5.0.6
