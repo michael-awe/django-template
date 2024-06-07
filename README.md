@@ -53,6 +53,11 @@ After installing the requirements, run setup.sh. When prompted, enter a new proj
 
 **NOTE: Ensure that the project name you enter is unique to ensure no clashes with Django or other Python modules**
 
+Next, create a `.env` file in the root directory of your project(same level as manage.py) and add the following secrets. It should look just like `.env.example` :
+
+    DEBUG="True"
+    SECRET_KEY="k=1opvz^^jopszbbzspxy(x45d_v0%ylhzbsr!05)!=_lihxz7"
+
 ## Usage
 
 In order to use Tailwind, you'll have to create two terminal tabs, one to start tailwind and the other to start your Django server
